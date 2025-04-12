@@ -15,3 +15,10 @@ def mask_account_card(type_numbers: str) -> str:
             numbers += i
             return f"{' '.join(type)} {get_mask_card_number(numbers)}"
 
+
+def get_date(date_string: str) -> str:
+    """Функция, которая принимает на вход строку с датой в формате "2024-03-11T02:26:18.671407"
+    и возвращает строку с датой в формате "ДД.ММ.ГГГГ" """
+    date_list = date_string[:10].split('-')[::-1]
+    return '.'.join(date_list)
+
