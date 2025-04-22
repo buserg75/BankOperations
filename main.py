@@ -1,4 +1,4 @@
-from src.processing import filter_by_state
+from src.processing import filter_by_state, sort_by_date
 
 
 if __name__ == "__main__":
@@ -15,3 +15,4 @@ if __name__ == "__main__":
     ]
 
     print(filter_by_state(data_list))
+    print(sort_by_date(data_list, False))
