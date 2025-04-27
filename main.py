@@ -1,7 +1,7 @@
 from src.processing import filter_by_state, sort_by_date
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": # pragma: no cover
     data_list = [
 
         {'id': 41428829, 'state': 'EXECUTED', 'date': '2019-07-03T18:35:29.512364'},
