@@ -23,4 +23,3 @@ def test_sort_by_date(data_list, data_list_sorted):
 
 def test_sort_by_date_2(data_list, data_list_sorted_2):
     assert sort_by_date(data_list, ascending=False) == data_list_sorted_2
-
