@@ -1,4 +1,5 @@
-from typing import List, Dict, Any
+from typing import Any, Dict, List
+
 
 def filter_by_state(data_list: List[Dict[str, Any]], state: str = 'EXECUTED') -> List[Dict[str, Any]]:
     """Функция возвращает новый список, отфильтрованный по указанному значению"""
@@ -6,10 +7,5 @@ def filter_by_state(data_list: List[Dict[str, Any]], state: str = 'EXECUTED') ->
 
 
 def sort_by_date(data_list: List[Dict[str, Any]], ascending: str = True) -> List[Dict[str, Any]]:
-    """Функция должна возвращает новый список, отсортированный по дате"""
+    """Функция возвращает новый список, отсортированный по дате"""
     return sorted(data_list, key=lambda x: x.get("date"), reverse=ascending)
-
-
-
-
-
